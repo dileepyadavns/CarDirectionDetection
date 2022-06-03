@@ -33,20 +33,12 @@ Vehicle direction identification consists of three module detection , tracking a
 - user configuration are mentioned inside this file
 - for examples : input shapes and model parameters(weights file path , config file path etc) are added in config.json
 
-
-#### 4) tracker.py
-
-- it have one Tracker class that will be used to track vehicles.
-
 #### 5) sort.py
 
 - SORT algorithm implementations
 - Kalman filter operations
 
 
-#### 6) vehicle_direction.py
-
-- Vector based direction recognization
 
 ### Limitations:
 
@@ -58,5 +50,4 @@ There are few primary drawbacks of this appoach
     
 3) in few cases , it performs bad, because right now it works on only single keypoint (center of object) we can improve its performace by detecting multiple keypoints and use majority votes result.
  
-## If it's helful for you then please give star :)
 
