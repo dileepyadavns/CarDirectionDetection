@@ -3,7 +3,7 @@ from sort import *
 
 
 
-
+#tracking objects with deepsort
 class Tracker:
     CLASS_NAMES= ["car"]
 

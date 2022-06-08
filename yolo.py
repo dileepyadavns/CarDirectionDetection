@@ -51,7 +51,10 @@ class YoloDetection():
         for out in outs:
             for detection in out:
                 scores = detection[5:]
+                print('scores')
+                print(scores)
                 class_id = np.argmax(scores)
+                print(class_id)
                 confidence = scores[class_id]
                 if confidence > self.__confThreshold:
                     center_x = int(detection[0] * frame_width)
@@ -74,7 +77,7 @@ class YoloDetection():
 
         blob = cv2.dnn.blobFromImage(frame, self.__scale, (self.__width, self.__height), self.__mean, True, crop=False)
 
-        # Run a model
+        # Run yolov4 model
         self.__net.setInput(blob)
         outs = self.__net.forward(self.get_output_layers_name(self.__net))
         (indices, boxes, confidences, class_ids) = self.post_process_output(frame, outs)
