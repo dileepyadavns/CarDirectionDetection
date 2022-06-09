@@ -12,6 +12,9 @@ Vehicle direction identification consists of three module detection , tracking a
 - lap
 - scikit-image
 
+### FLOW CHART
+<img src="vehicledirection.png"/>
+
 
 
 # Quick Overview about structure
