@@ -5,12 +5,10 @@ import argparse
 import time
 import glob
 from skimage import io
-
 import os
 import numpy as np
 
 np.random.seed(0)
-
 
 def linear_assignment(cost_matrix):
     try:
