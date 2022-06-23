@@ -9,7 +9,7 @@ Vehicle direction identification consists of three module detection , tracking a
 - opencv = '4.5.4-dev'
 - scipy = '1.4.1'
 - filterpy 
-- lap
+
 - scikit-image
 
 ### FLOW CHART
